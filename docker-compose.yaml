@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  vine-care-public:
+    build:
+      context: .
+      args:
+        VITE_API_URL: ${VITE_API_URL:-http://localhost:8002/api}
+    container_name: vine-care-public
+    ports:
+      - "8081:80"
+    restart: always
