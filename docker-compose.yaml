@@ -8,5 +8,5 @@ services:
         VITE_API_URL: ${VITE_API_URL:-http://localhost:8002/api}
     container_name: vine-care-public
     ports:
-      - "8081:80"
+      - "8005:80"
     restart: always
